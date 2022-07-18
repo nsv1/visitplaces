@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<meta = charset="utf-8">
+		<style type='text/css'>
+			p.unit_name {
+				font-size:     130%; 
+				font-weight:   bold; 
+				margin-top:    10px; 
+				margin-bottom: 10px;
+			}
+			p.date_hour {
+				font-size:     125%;
+				font-weight:   bold;
+				margin-top:    10px;
+				margin-bottom: 10px;
+			}
+			p.criterium {
+				font-size:     120%; 
+				font-weight:    bold; 
+				margin-top:    10px;
+				margin-bottom: 10px;
+			}
+			p.criterium_parameters {
+				font-size:     100%; 
+				font-weight:   bold; 
+				margin-top:    10px;
+				margin-bottom: 10px;
+			}
+			p.criterium_violations {
+				font-size:     100%; 
+				font-weight:   bold;
+				margin-top:    10px;
+				margin-bottom: 10px;
+			}
+			p.avrchm {
+				text-decoration: underline;
+				margin-top:    0px;
+				margin-bottom: 0px;
+			}
+			table {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			th {
+				font-weight:   bold;
+				border: 1px solid black;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			td {
+				border: 1px solid black;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="unit_name">Бурейская ГЭС, Гидроагрегат №1</p>
+		<p class="date_hour">08.10.2020 07:17:52 - 07:49:59</p>
+
+		<p class="criterium">Обозначения</p>
+		<table style="font-size:90%" cellspacing="0">
+			<tr>
+				<th colspan="2">Обозначение</th>
+				<th>Значение</th></tr>
+			<!--<tr><td colspan="3" align="center" style="font-weight:bold">Общие</td></tr> -->
+			<tr>
+				<td colspan="2">"F"</td>
+				<td>частота</td>
+			</tr>
+			<tr>
+				<td colspan="2">"МП"</td>
+				<td>мёртвая полоса</td>
+			</tr>
+			<tr>
+				<td colspan="2">"P"</td>
+				<td>мощность</td>
+			</tr>
+			<tr>
+				<td colspan="2">"Pном"</td>
+				<td>номинальная мощность</td>
+			</tr>
+			<tr>
+				<td colspan="2">"Pмакс"</td>
+				<td>максимальная мощность (верхняя граница регулировочного диапазона)</td>
+			</tr>
+			<tr>
+				<td colspan="2">"Pмин"</td>
+				<td>минимальная мощность (нижняя граница регулировочного диапазона)</td>
+			</tr>
+			<tr>
+				<td colspan="2">"Pфакт"</td>
+				<td>фактическая активная мощность</td>
+			</tr>
+			<tr>
+				<td colspan="2">"Pисх"</td>
+				<td>"исходная" мощность</td>
+			</tr>
+			<tr>
+				<td colspan="2">"Pпт.мгн"</td>
+				<td>"требуемая первичная мощность (мгновенная)"</td>
+			</tr>
+			<tr>
+				<td colspan="2">"Тисх"</td>
+				<td>исходный момент выхода частоты за МП</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">"нарушение"</td>
+				<td>моменты/интервалы/объемы нарушений</td>
+			</tr>
+		</table>
+
+		<div id="criteriumOPRCHInformationNonprovision"></div>
+
+		<div id="criteriumOPRCHMeasurementsSamplingDiscrepancy"></div>
+
+		<div id="criteriumOPRCHOscillatingProcessPresence"></div>
+
+		
+<p class="criterium">Отчет по критерию "Отсутствие адекватной/должной реакции".</p>
+<p class="criterium_parameters">Параметры алгоритма:</p>
+Уставка допустимого суммарного времени выхода частоты за МП: 0.0 сек<br>
+Уставка дефицита мощности: 1.00 %Pном<br>
+<p class="criterium_violations">Меры нарушений</p>
+Минимальный средний дефицит мощности: 5.11 %Pном (17.11 МВт).<br>
+<br>Нарушение: <b>есть</b><br>
+<iframe src="plots/plot_overview.html" width="100%" height="800" frameborder="0">Ваш браузер не поддерживает плавающие фреймы</iframe>
+<iframe src="plots/plot_overview_detailed.html" width="100%" height="800" frameborder="0">Ваш браузер не поддерживает плавающие фреймы</iframe>
+<iframe src="plots/plot_power_deficiency.html" width="100%" height="800" frameborder="0">Ваш браузер не поддерживает плавающие фреймы</iframe>
+
+
+	</body>
+</html>
